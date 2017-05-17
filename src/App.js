@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const menu = ["About","Portfolio","Resume","Contact"];
     return (
       <div className="App">
         <div className="App-header">
@@ -13,6 +14,17 @@ class App extends Component {
         <p className="App-intro">
           <code>Danielle DeManss - portfolio</code>
         </p>
+        <div className="App-menu-section">
+          <div className="App-menu-items">
+            <ul>
+              {
+                menu.map(m =>
+                  <li>{m}</li>
+                )
+              }
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
