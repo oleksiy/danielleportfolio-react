@@ -8,10 +8,11 @@
 }
 
 .App-header {
-  background-image: url('office-panorama.svg');
+  background-image: url('office-panorama.jpg');
   height: 400px;
   padding: 20px;
   color: white;
+  background-size: cover;
 }
 
 .App-intro {
